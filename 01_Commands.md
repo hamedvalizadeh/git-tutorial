@@ -43,3 +43,22 @@ in order to change the current git source repository to some new one run the com
 
 
 
+# Large Files
+
+to upload large files, we should install ((lfs)) in each individual repository as follow:
+
+- git lfs install
+
+then we should track the large file with following command:
+
+- git lfs track "path_to_large_file/largefile.psd"
+
+after these 2 commands, we can normally commit and push our changes as follow:
+
+- git add --all
+
+- git commit -m "commit message"
+
+- git push
+
+Source: https://guide.ncloud-docs.com/docs/en/sourcecommit-use-lfs
