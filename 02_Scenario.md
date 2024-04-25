@@ -8,3 +8,30 @@ some times it is not possible to use command (( clone )) to connect to the remot
 4. git pull origin master 
 
 from now on, you can work with your connected local git repository as usual.
+
+
+
+***
+
+# revert local changes
+
+to revert local changes run the following commands:
+
+- git reset
+  - This will un-stage all files you might have staged with `git add` 
+- git checkout .
+  - This will revert all local uncommitted changes (should be executed in repo root).
+  - run `git checkout [some_dir|file.txt]` to revert uncommitted changes only to particular file or directory.
+
+
+
+following command will remove all local untracked files, so *only* git tracked files remain:
+
+- git clean -fdx
+  - `-x` will also remove all ignored files like `.gitignore`.
+
+
+
+Another way to revert all uncommitted changes (longer to type, but works from any subdirectory)
+
+- git reset --hard HEAD
