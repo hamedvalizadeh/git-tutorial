@@ -62,3 +62,13 @@ after these 2 commands, we can normally commit and push our changes as follow:
 - git push
 
 Source: https://guide.ncloud-docs.com/docs/en/sourcecommit-use-lfs
+
+
+
+# Revert Local Commit
+
+to revert local commit, but keep changes, execute the following command:
+
+```powershell
+git reset HEAD^
+```
