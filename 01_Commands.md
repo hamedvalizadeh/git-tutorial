@@ -72,3 +72,4 @@ to revert local commit, but keep changes, execute the following command:
 ```powershell
 git reset HEAD^
 ```
+
